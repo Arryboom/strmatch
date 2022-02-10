@@ -198,54 +198,54 @@ bool pluginInit(PLUG_INITSTRUCT* initStruct)
         return true;
     }, false);
 
-    _plugin_registerexprfunction(pluginHandle, "strcmp_utf8", 2, [](int, duint* argv, void*)
+    _plugin_registerexprfunction(pluginHandle, "strcmp_utf8", 2, [](int argc, const duint* argv, void*)
     {
         return magic_match(argv[0], argv[1], StringEntry::strcmp_utf8, true);
     }, nullptr);
-    _plugin_registerexprfunction(pluginHandle, "strcmp_utf16", 2, [](int, duint* argv, void*)
+    _plugin_registerexprfunction(pluginHandle, "strcmp_utf16", 2, [](int argc, const  duint* argv, void*)
     {
         return magic_match(argv[0], argv[1], StringEntry::strcmp_utf16, true);
     }, nullptr);
-    _plugin_registerexprfunction(pluginHandle, "strcmp_local", 2, [](int, duint* argv, void*)
+    _plugin_registerexprfunction(pluginHandle, "strcmp_local", 2, [](int argc, const  duint* argv, void*)
     {
         return magic_match(argv[0], argv[1], StringEntry::strcmp_local, true);
     }, nullptr);
 
-    _plugin_registerexprfunction(pluginHandle, "stricmp_utf8", 2, [](int, duint* argv, void*)
+    _plugin_registerexprfunction(pluginHandle, "stricmp_utf8", 2, [](int argc, const duint* argv, void*)
     {
         return magic_match(argv[0], argv[1], StringEntry::strcmp_utf8, false);
     }, nullptr);
-    _plugin_registerexprfunction(pluginHandle, "stricmp_utf16", 2, [](int, duint* argv, void*)
+    _plugin_registerexprfunction(pluginHandle, "stricmp_utf16", 2, [](int argc, const duint* argv, void*)
     {
         return magic_match(argv[0], argv[1], StringEntry::strcmp_utf16, false);
     }, nullptr);
-    _plugin_registerexprfunction(pluginHandle, "stricmp_local", 2, [](int, duint* argv, void*)
+    _plugin_registerexprfunction(pluginHandle, "stricmp_local", 2, [](int argc, const  duint* argv, void*)
     {
         return magic_match(argv[0], argv[1], StringEntry::strcmp_local, false);
     }, nullptr);
 
-    _plugin_registerexprfunction(pluginHandle, "strstr_utf8", 2, [](int, duint* argv, void*)
+    _plugin_registerexprfunction(pluginHandle, "strstr_utf8", 2, [](int argc, const duint* argv, void*)
     {
         return magic_match(argv[0], argv[1], StringEntry::strstr_utf8, true);
     }, nullptr);
-    _plugin_registerexprfunction(pluginHandle, "strstr_utf16", 2, [](int, duint* argv, void*)
+    _plugin_registerexprfunction(pluginHandle, "strstr_utf16", 2, [](int argc, const  duint* argv, void*)
     {
         return magic_match(argv[0], argv[1], StringEntry::strstr_utf16, true);
     }, nullptr);
-    _plugin_registerexprfunction(pluginHandle, "strstr_local", 2, [](int, duint* argv, void*)
+    _plugin_registerexprfunction(pluginHandle, "strstr_local", 2, [](int argc, const duint* argv, void*)
     {
         return magic_match(argv[0], argv[1], StringEntry::strstr_local, true);
     }, nullptr);
 
-    _plugin_registerexprfunction(pluginHandle, "stristr_utf8", 2, [](int, duint* argv, void*)
+    _plugin_registerexprfunction(pluginHandle, "stristr_utf8", 2, [](int argc, const duint* argv, void*)
     {
         return magic_match(argv[0], argv[1], StringEntry::strstr_utf8, false);
     }, nullptr);
-    _plugin_registerexprfunction(pluginHandle, "stristr_utf16", 2, [](int, duint* argv, void*)
+    _plugin_registerexprfunction(pluginHandle, "stristr_utf16", 2, [](int argc, const duint* argv, void*)
     {
         return magic_match(argv[0], argv[1], StringEntry::strstr_utf16, false);
     }, nullptr);
-    _plugin_registerexprfunction(pluginHandle, "stristr_local", 2, [](int, duint* argv, void*)
+    _plugin_registerexprfunction(pluginHandle, "stristr_local", 2, [](int argc, const duint* argv, void*)
     {
         return magic_match(argv[0], argv[1], StringEntry::strstr_local, false);
     }, nullptr);

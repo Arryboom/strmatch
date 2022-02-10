@@ -51,6 +51,7 @@ list(APPEND PluginTemplate_SOURCES
 	"src/pluginmain.cpp"
 	"src/plugin.h"
 	"src/pluginmain.h"
+	"src/stringutils.h"
 )
 
 list(APPEND PluginTemplate_SOURCES

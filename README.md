@@ -31,3 +31,9 @@ Alternatively you can open this folder in Visual Studio/CLion/Qt Creator.
 
 ![building animation](https://github.com/x64dbg/PluginTemplate/blob/3951eb4b320b7a26164616ab5141414e8cd5b0a1/building.gif?raw=true)
 
+
+
+
+X64 strmatch fixed.
+
+/build64/Release/PluginTemplate.dp64
