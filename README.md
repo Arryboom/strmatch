@@ -1,3 +1,37 @@
+# strmatch
+
+>X64 strmatch from official with fixed support for newest x64dbg sdk.
+
+Simple string matching plugin for x64dbg. Supports UTF8, UTF16 and Local codepages.
+
+```
+[strmatch] documentation:
+  1. Command: strmatch_set index, "string"
+  2. Expression function: [action]_[encoding](va, index)
+  Actions: strcmp, stricmp, strstr, stristr
+  Encodings: utf8, utf16, local
+  Example: strcmp_utf16(va, index)
+```
+
+# Example
+
+```
+strmatch_set 1337, "hello"
+stristr_utf8(edx, 1337)
+```
+
+
+
+original at https://github.com/x64dbg/strmatch/
+
+
+/build64/Release/PluginTemplate.dp64
+
+
+
+---
+
+
 # PluginTemplate
 
 Template CMake project for x64dbg plugins. This uses [cmkr](https://build-cpp.github.io/cmkr/), `cmake.toml` contains the project configuration.
@@ -33,7 +67,3 @@ Alternatively you can open this folder in Visual Studio/CLion/Qt Creator.
 
 
 
-
-X64 strmatch fixed.
-
-/build64/Release/PluginTemplate.dp64
